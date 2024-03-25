@@ -1,0 +1,31 @@
+[
+    {
+        "id": "6AC9EAA8",
+        "category": "men",
+        "brand": "Veste",
+        "name": "Футболка Кот",
+        "cost": 1799,
+        "color": [
+            "Черный"
+        ],
+        "sizes": [
+            "M",
+            "L"
+        ],
+        "photo": "cat.jpg",
+        "preview": "cat_preview.png"
+    },
+    {
+        "id": "55565D60",
+        "category": "men",
+        "brand": "Veste",
+        "name": "Футболка Корова",
+        "cost": 1799,
+        "sizes": [
+            "M",
+            "L"
+        ],
+        "photo": "cow.jpg",
+        "preview": "cow_preview.png"
+    }
+]

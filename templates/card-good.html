@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Veste">
+    <title>Veste</title>
+
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Veste"/>
+    <meta property="og:title" content="Одежда всех размеров"/>
+    <meta property="og:description" content="Veste"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="600"/>
+
+    <link rel="icon" type="image/png" href="../static/images/favicon/favicon.png">
+    <link rel="preload" href="../static/fonts/CoFoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../static/fonts/CoFoSans-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../static/fonts/CoFoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../static/fonts/CoFoSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../static/styles/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="header__city-button">Ваш город?</button>
+                <div class="header__right-block">
+                    <a class="header__pay" href="faq">faq</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="subheader">
+            <div class="container">
+                <div class="subheader__wrapper">
+                    <nav class="subheader__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a class="navigation__link" href="catalog">Каталог</a></li>
+                        </ul>
+                    </nav>
+                    <a href="/" class="subheader__logo"><img src="../static/images/svg/logo.PNG" alt="veste Shop"></a>
+                    <button class="subheader__cart">Корзина</button>
+                </div>
+            </div>
+        </section>
+        <section class="card-good">
+            <div class="container card-good__wrapper">
+                <div class="card-good__image-wrapper">
+                    <img class="card-good__image" src="" alt="">
+                </div>
+                <div class="card-good__description">
+                    <h2 class="card-good__title-wrapper">
+                        <p class="card-good__brand"></p>
+                        <p class="card-good__title"></p>
+                    </h2>
+                    <p class="card-good__price"></p>
+
+                    <div class="card-good__color-wrapper card-good__select__wrapper">
+                        <button class="card-good__color card-good__select"></button>
+                        <ul class="card-good__color-list card-good__select-list">
+                            <!-- Селекты цвета из базы данных -->
+                        </ul>
+                    </div>
+
+                    <div class="card-good__sizes-wrapper card-good__select__wrapper">
+                        <button class="card-good__sizes card-good__select"></button>
+                        <ul class="card-good__sizes-list card-good__select-list">
+                            <!-- Селекты размера из базы данных -->
+                        </ul>
+                    </div>
+
+                    <button class="card-good__buy">Добавить в корзину</button>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container footer__columns">
+            <div class="footer__column">
+                <h2 class="footer__column-title">roll and smoke</h2>
+                <h2 class="footer__column-title">(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h2>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__column-title">Мы в соцсетях</h3>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item">
+                        <ul class="footer__column-icons">
+                            <li><a target="_blank" href="https://t.me/vestej" class="footer__social-item footer__social-item_tg"></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/v3s.te?igsh=MTl6b2NiYTU3Y3M5dg==" class="footer__social-item footer__social-item_ig"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <div class="footer__column-item">
+                    <h3 class="footer__column-title">Способы оплаты</h3>
+                    <ul class="footer__column-icons">
+                        <li class="footer__column-icon footer__icon-mastercard"></li>
+                        <li class="footer__column-icon footer__icon-visa"></li>
+                        <li class="footer__column-icon footer__icon-mir"></li>
+                    </ul>
+                </div>
+                <p class="footer__column-item footer__text">
+
+                    Вы можете оплатить покупки<br>
+                </p>
+                <h3>Как вам по кайфу</h3>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay"> <!-- cart-overlay-open -->
+        <div class="cart">
+            <h2 class="cart__title">Корзина</h2>
+            <div class="cart__table-wrapper">
+
+                <table class="cart__table">
+                    <colgroup class="cart__col">
+                        <col class="cart__col-number">
+                        <col class="cart__col-name">
+                        <col class="cart__col-color">
+                        <col class="cart__col-size">
+                        <col class="cart__col-price">
+                        <col class="cart__col-delete">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="cart__title-number">#</th>
+                            <th>Наименование</th>
+                            <th>Цвет</th>
+                            <th>Размер</th>
+                            <th>Цена</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="cart__list-goods">
+                        <tr>
+                            <td>1</td>
+                            <td>New Balance Леггинсы NB Essentials Botanical Legging</td>
+                            <td>-</td>
+                            <td>42/44</td>
+                            <td>2999 &#8381;</td>
+                            <td><button class="btn-delete">&times;</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Adidas Костюм спортивный W TS CO ENERGIZ</td>
+                            <td>-</td>
+                            <td>42/44</td>
+                            <td>7999 &#8381;</td>
+                            <td><button class="btn-delete">&times;</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Befree Топ Exclusive online</td>
+                            <td>Фиолетовый</td>
+                            <td>42</td>
+                            <td>599 &#8381;</td>
+                            <td><button class="btn-delete">&times;</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">
+                                <div class="cart__wrapper-promo">
+                                    <label for="promo">Промо-код:</label>
+                                    <input class="cart__promo" id="promo" type="text">
+                                </div>
+
+                            </th>
+                            <th>Итого:</th>
+                            <th class="cart__total-cost" colspan="2">11597 &#8381;</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+            <button class="cart__btn-buy">Оформить</button>
+            <button class="cart__btn-close"></button>
+        </div>
+    </div>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
